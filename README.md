@@ -4,6 +4,8 @@
 
 ### everything else is automatically created below here
 
+![Thumbnail of Slate](bins_image.png)
+
 You can use the [editor on GitHub](https://github.com/johngear/DSP/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
