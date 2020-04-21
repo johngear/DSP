@@ -49,7 +49,7 @@ The plotFreq function takes in the input and output vectors along with a few oth
 
 # Results 
 
-![Thumbnail of Slate](image1.png)
+![Thumbnail of Slate](image1derek.png)
 In order to evaluate the effectiveness of our algorithm, we analyzed our output signal using both graphical and auditory methods. Our first graphical assessment required the waterfall plots (Irvine, 2006) of the input and output FFTs. For those unfamiliar with the waterfall plot, it provides similar information compared to a spectogram.
 
 As you can see, our pitch correction clearly shifts the frequency spectra of the original signal, concentrating at two major frequencies.
