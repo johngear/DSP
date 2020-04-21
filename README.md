@@ -23,6 +23,8 @@ RANDALL ADD STUFF HERE
 ##  Functions:
 ### Now I will give a brief description of each Matlab file that we developed!
 
+To view complete code on Github, click [here](https://github.com/johngear/DSP)
+
 ### Dashboard.m
 
 The dashboard file is the only file that a user should ever interface with during most situations. This file allows the user to select the values for various filter parameters without having to dive into the lower levels of our code. After inputting the filter parameters, the liveProcessing function is called which performs signal modifications described by the user’s parameters and returns the original signal and modified signal. At the bottom of this file there are options to playback the input and output audio and to graphically compare the main pitch of each signal over time. 
