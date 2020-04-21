@@ -18,7 +18,7 @@ At a high level, our algorithm takes in an audio signal as the argument along wi
 ### Algorithm:
 
 RANDALL ADD STUFF HERE
-
+![Thumbnail of Slate](randall.png)
 
 ##  Functions:
 ### Now I will give a brief description of each Matlab file that we developed!
@@ -60,7 +60,6 @@ The Tune function only corrects a segment of the windowed signal--to the point o
 
 Once the Tune function has modified the signal, it returns the corrected segment of signal while preserving the current window’s overlap into the next window.
 
-![Thumbnail of Slate](randall.png)
 
 ### mainFreqIdent.m 
 
