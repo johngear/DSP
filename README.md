@@ -1,9 +1,5 @@
-# DSP site made by John
-
 # Live Pitch Correction (auto-tune) in Matlab
-
 ## By DSP People
-
 ### Introduction:
 
 Hello! We are the DSP people. We are a group of Michigan electrical engineers who were tasked with developing software to display our knowledge of digital signal processing. 
@@ -19,8 +15,8 @@ RANDALL ADD SHIT HERE
 ![Thumbnail of Slate](bins_image.png)
 
 
-# Functions:
-## Now I will give a brief description of each Matlab file that we developed!
+##  Functions:
+### Now I will give a brief description of each Matlab file that we developed!
 
 ### Dashboard.m
 
