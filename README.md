@@ -1,5 +1,7 @@
 #  Pitch Correction (auto-tune) in Matlab
-#   
+
+
+
 ## By DSP People 
 ### John Gearig, Derek LaFaive, Marlon Greene, Randall Schliebe
 ----------------------------------------------------------------
@@ -52,9 +54,6 @@ The liveProcessing function takes in the user’s parameters selected in the das
 
 The Tune function takes in the user’s defined parameters along with a new frame of audio from liveProcessing. This function is called every time that the liveProcessing function receives a new frame, and after receiving enough frames to make the desired window length, this function will begin to modify the audio in the following way: 
 
-# RANDALL ADD STUFF HERE
-
-
 ### mainFreqIdent.m 
 
 This function is responsible for identifying how far off the audio’s frequency is from the desired frequency of the nearest musical note. This function will take in the fundamental frequency of the input audio and return what the necessary frequency shift is to reach the desired frequency. 
@@ -95,7 +94,8 @@ Based on the graphs shown previously, our algorithm is shifting with relatively 
 
 
 
-
+# References:
+Tom Irvine (2020). Waterfall FFT (https://www.mathworks.com/matlabcentral/fileexchange/7463-waterfall-fft), MATLAB Central File Exchange. Retrieved April 8, 2020.
 
 
 ------------------------------------
