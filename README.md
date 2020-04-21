@@ -1,5 +1,5 @@
 # Live Pitch Correction (auto-tune) in Matlab
-## By DSP People
+## By DSP People (John Gearig, Derek LaFaive, Marlon Greene, Randall Schliebe)
 ### Introduction:
 
 Hello! We are the DSP people. We are a group of Michigan electrical engineers who were tasked with developing software to display our knowledge of digital signal processing. 
@@ -7,6 +7,8 @@ Hello! We are the DSP people. We are a group of Michigan electrical engineers wh
 As you know, singing is an incredibly difficult task, but singing the correct pitch at all times is even harder. Our groups’ goal was to develop an algorithm that would make this task much simpler. 
 
 At a high level, our algorithm takes in an audio signal as the argument along with several customizable parameters, and outputs a pitch corrected version of the input signal. 
+
+
 
 ### Algorithm:
 
