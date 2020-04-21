@@ -62,7 +62,7 @@ However, we require more information about the frequencies present within the si
 
 Based on our higher resolution, it is apparent that our original signal consists of a few frequency bands, most of which having a bandwidth between 5 and 10 Hz.
 
-![Thumbnail of Slate](image4png.png)
+![Thumbnail of Slate](image4.jpg)
 
 After correcting the signal, we can observe that the bandwidths have been altered drastically. The effective bandwidths for each band are smaller overall, and more emphasis is placed on the desired frequency (or musical note) from the frequency bins.
 
