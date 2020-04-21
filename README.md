@@ -1,4 +1,6 @@
-# Live Pitch Correction (auto-tune) in Matlab
+# Live Pitch Correction in Matlab
+---------------------------------
+## auto-tune
 ## By DSP People 
 ### John Gearig, Derek LaFaive, Marlon Greene, Randall Schliebe
 ----------------------------------------------------------------
