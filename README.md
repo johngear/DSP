@@ -96,7 +96,7 @@ Based on the graphs shown previously, our algorithm is shifting with relatively 
 
 # References:
 Tom Irvine (2020). Waterfall FFT (https://www.mathworks.com/matlabcentral/fileexchange/7463-waterfall-fft), MATLAB Central File Exchange. Retrieved April 8, 2020.
-
+Nagel, Ashley. “Methods.” It's Just A Little Pitch Correction - DSP Final Project by A. Nagel, www.columbia.edu/~agn2114/methods.html.
 
 ------------------------------------
 ------------------------------------
