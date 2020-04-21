@@ -30,6 +30,19 @@ The liveProcessing function takes in the user’s parameters selected in the das
 
 The Tune function takes in the user’s defined parameters along with a new frame of audio from liveProcessing. This function is called every time that the liveProcessing function receives a new frame, and after receiving enough frames to make the desired window length, this function will begin to modify the audio in the following way: 
 
+### mainFreqIdent.m 
+
+This function is responsible for identifying how far off the audio’s frequency is from the desired frequency of the nearest musical note. This function will take in the fundamental frequency of the input audio and return what the necessary frequency shift is to reach the desired frequency. 
+
+
+### sigFade.m
+
+The sigFade function takes in the new audio signal and a fade length (chosen by the user in dashboard.m) and performs a fade-in and fade-out manipulation. Essentially this function just attenuates the beginning and end of each window so that the final output signal doesn’t have any audio clicking. This function returns the new audio signal with the necessary attenuation. 
+
+### plotFreq.m
+
+The plotFreq function takes in the input and output vectors along with a few other user defined parameters to graph our filter’s functionality. This function plots the fundamental pitch of the input and the output vs. time. This function can be called at the end of dashboard.m by uncommenting a few lines of code. 
+
 
 You can use the [editor on GitHub](https://github.com/johngear/DSP/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
