@@ -1,5 +1,7 @@
 # Live Pitch Correction (auto-tune) in Matlab
-## By DSP People (John Gearig, Derek LaFaive, Marlon Greene, Randall Schliebe)
+## By DSP People 
+### John Gearig, Derek LaFaive, Marlon Greene, Randall Schliebe
+----------------------------------------------------------------
 ### Introduction:
 
 Hello! We are the DSP people. We are a group of Michigan electrical engineers who were tasked with developing software to display our knowledge of digital signal processing. 
