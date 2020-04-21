@@ -1,6 +1,4 @@
-# Live Pitch Correction in Matlab
----------------------------------
-## auto-tune
+#  Pitch Correction (auto-tune) in Matlab
 ## By DSP People 
 ### John Gearig, Derek LaFaive, Marlon Greene, Randall Schliebe
 ----------------------------------------------------------------
@@ -56,21 +54,21 @@ In order to evaluate the effectiveness of our algorithm, we analyzed our output 
 
 As you can see, our pitch correction clearly shifts the frequency spectra of the original signal, concentrating at two major frequencies.
 
-![Thumbnail of Slate](image2.png)
+![Thumbnail of Slate](image2derek.png)
 
 However, we require more information about the frequencies present within the signal. This leads to our plot of the original signal with high frequency resolution (meaning a small delta f).
 
 However, we require more information about the frequencies present within the signal. This leads to our plot of the original signal with high frequency resolution (meaning a small delta f).
 
-![Thumbnail of Slate](image3.png)
+![Thumbnail of Slate](image3derek.png)
 
 Based on our higher resolution, it is apparent that our original signal consists of a few frequency bands, most of which having a bandwidth between 5 and 10 Hz.
 
-![Thumbnail of Slate](image4.jpg)
+![Thumbnail of Slate](image4derek.jpg)
 
 After correcting the signal, we can observe that the bandwidths have been altered drastically. The effective bandwidths for each band are smaller overall, and more emphasis is placed on the desired frequency (or musical note) from the frequency bins.
 
-![Thumbnail of Slate](image5.png)
+![Thumbnail of Slate](image5derek.png)
 
 In addition, we plotted the pitch of the input signal (which is linearly increasing and decreasing over time) and compared it to the output signal pitch. It is evident that the algorithm generally shifts frequencies to their correct notes based on the frequency bin.
 
