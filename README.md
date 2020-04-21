@@ -29,6 +29,23 @@ RANDALL ADD SHIT HERE
 
 The dashboard file is the only file that a user should ever interface with during most situations. This file allows the user to select the values for various filter parameters without having to dive into the lower levels of our code. After inputting the filter parameters, the liveProcessing function is called which performs signal modifications described by the user’s parameters and returns the original signal and modified signal. At the bottom of this file there are options to playback the input and output audio and to graphically compare the main pitch of each signal over time. 
 
+```markdown
+##Stereo file to be modified. Ex: 'dsp_SONG.wav'
+input_file = 'drone.wav'; 
+
+##Size of the window in frames. Each frame has 1024 samples 
+window_size = 10; 
+
+##Overlap percentage in decimal form (20% overlap = .2)
+overlap = .2;
+
+##fade length in number of samples per fade-in and fade-out
+fade_length = 128;
+
+##Call processing function and saving the input and output
+[input,output] = liveProcessing(input_file,window_size,overlap,fade_length);
+```
+
 ### liveProcessing.m
 
 The liveProcessing function takes in the user’s parameters selected in the dashboard and outputs the original input vector and the modified output vector. First, this function creates musical “bins”. A bin is essentially a range of frequencies that correspond to a specific note.for example, an A3 is supposed to be 220 Hz, so if we create a bin that ranges from 213-226Hz , we know that  all frequencies in that range should really be an A3. After developing the musical bins, this function iterates through the input file frame-by-frame and passes windows of samples to the other functions so that they can perform the necessary modifications. 
@@ -77,22 +94,6 @@ In addition, we plotted the pitch of the input signal (which is linearly increas
 
 Based on the graphs shown previously, our algorithm is shifting with relatively high precision and accuracy. However in practice, this difference isn’t the most effective to the listener. In fact our group discovered a bit of a paradox, where our data looked promising (A.K.A shifted correctly) but sounded a bit lackluster in comparison to the ineffective shifts with drastically different sound. Some of these issues may lie within our code; however much of these issues show that audio analysis can be subjective. 
 
-```markdown
-%%Stereo file to be modified. Ex: 'dsp_SONG.wav'
-input_file = 'drone.wav'; 
-
-%%Size of the window in frames. Each frame has 1024 samples 
-window_size = 10; 
-
-%%Overlap percentage in decimal form (20% overlap = .2)
-overlap = .2;
-
-%%fade length in number of samples per fade-in and fade-out
-fade_length = 128;
-
-%%Call processing function and saving the input and output
-[input,output] = liveProcessing(input_file,window_size,overlap,fade_length);
-```
 
 
 
