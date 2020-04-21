@@ -5,7 +5,7 @@
 ## By DSP People 
 ### John Gearig, Derek LaFaive, Marlon Greene, Randall Schliebe
 ----------------------------------------------------------------
-### Introduction:
+## Introduction
 
 Hello! We are the DSP people. We are a group of Michigan electrical engineers who were tasked with developing software to display our knowledge of digital signal processing. 
 
@@ -15,7 +15,7 @@ At a high level, our algorithm takes in an audio signal as the argument along wi
 
 
 
-### Algorithm:
+## Algorithm
 
 At its core, “pitch” is a perceptual quality of an audio signal; that is, it has to do with how humans interpret the highness or lowness of a note. Thus, pitch correction aims to meet human perception of sound. While pitch can reasonably be quantified by the fundamental frequency of a signal, pitch correction is not possible by merely shifting the fundamental frequency to the desired level. Audio signals are typically composed of many layered frequencies, i.e., harmonics, so pitch correction requires proportional adjustment of all frequencies of the signal. This can be accomplished by first lengthening or shortening a signal without changing its pitch and then stretching or shrinking it back to its original size, thus altering pitch.
 
@@ -23,7 +23,7 @@ Our algorithm operates with discrete audio data sampled at some finite frequency
 
 ![Thumbnail of Slate](randall.png)
 
-##  Functions:
+##  Functions
 ### Here is a brief description of each MATLAB file that we developed!
 
 To view complete code on Github, click [here](https://github.com/johngear/DSP)
@@ -77,7 +77,7 @@ The sigFade function takes in the new audio signal and a fade length (chosen by 
 
 The plotFreq function takes in the input and output vectors along with a few other user defined parameters to graph our filter’s functionality. This function plots the fundamental pitch of the input and the output vs. time. This function can be called at the end of dashboard.m by uncommenting a few lines of code. 
 
-# Results 
+## Results: 
 
 ![Thumbnail of Slate](image1derek.png)
 In order to evaluate the effectiveness of our algorithm, we analyzed our output signal using both graphical and auditory methods. Our first graphical assessment required the waterfall plots (Irvine, 2006) of the input and output FFTs. For those unfamiliar with the waterfall plot, it provides similar information compared to a spectogram.
@@ -104,7 +104,7 @@ Based on the graphs shown previously, our algorithm is shifting with relatively 
 
 
 
-# References:
+## References:
 Tom Irvine (2020). Waterfall FFT (https://www.mathworks.com/matlabcentral/fileexchange/7463-waterfall-fft), MATLAB Central File Exchange. Retrieved April 8, 2020.
 
 Nagel, Ashley. “Methods.” It's Just A Little Pitch Correction - DSP Final Project by A. Nagel, www.columbia.edu/~agn2114/methods.html.
