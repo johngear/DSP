@@ -1,4 +1,4 @@
-#  Pitch Correction (auto-tune) in Matlab
+#  Pitch Correction (auto-tune) in MATLAB
 
 
 
@@ -21,7 +21,7 @@ RANDALL ADD STUFF HERE
 ![Thumbnail of Slate](randall.png)
 
 ##  Functions:
-### Now I will give a brief description of each Matlab file that we developed!
+### Here is a brief description of each MATLAB file that we developed!
 
 To view complete code on Github, click [here](https://github.com/johngear/DSP)
 
