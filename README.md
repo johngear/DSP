@@ -1,7 +1,5 @@
 #  Pitch Correction (auto-tune) in Matlab
-
-
-
+#   
 ## By DSP People 
 ### John Gearig, Derek LaFaive, Marlon Greene, Randall Schliebe
 ----------------------------------------------------------------
@@ -53,6 +51,9 @@ The liveProcessing function takes in the user’s parameters selected in the das
 ### Tune.m
 
 The Tune function takes in the user’s defined parameters along with a new frame of audio from liveProcessing. This function is called every time that the liveProcessing function receives a new frame, and after receiving enough frames to make the desired window length, this function will begin to modify the audio in the following way: 
+
+# RANDALL ADD STUFF HERE
+
 
 ### mainFreqIdent.m 
 
