@@ -52,7 +52,14 @@ The liveProcessing function takes in the user’s parameters selected in the das
 
 ### Tune.m
 
-The Tune function takes in the user’s defined parameters along with a new frame of audio from liveProcessing. This function is called every time that the liveProcessing function receives a new frame, and after receiving enough frames to make the desired window length, this function will begin to modify the audio in the following way: 
+The Tune function takes in the user’s defined parameters along with a new frame of audio from liveProcessing. This function is called every time that the liveProcessing function receives a new frame. After receiving enough frames to make the desired window length, the Tune function will begin to modify the audio.
+
+With a full window of audio data, the Tune function begins by determining the pitch of the audio. It determines pitch by finding the fundamental frequency of the windowed signal. This function then feeds this frequency to the Bins function, acquiring the desired frequency shift.
+
+The Tune function only corrects a segment of the windowed signal--to the point of the overlap with the next window. To shift the pitch of the segment of signal, the Tune function first extends or concatenates the signal according to the desired frequency shift, effectively changing the signal’s length without changing its pitch. It then stretches or shrinks the signal back to its original size, changing the audio’s pitch. 
+
+Once the Tune function has modified the signal, it returns the corrected segment of signal while preserving the current window’s overlap into the next window.
+
 
 ### mainFreqIdent.m 
 
