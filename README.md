@@ -44,48 +44,43 @@ The sigFade function takes in the new audio signal and a fade length (chosen by 
 The plotFreq function takes in the input and output vectors along with a few other user defined parameters to graph our filter’s functionality. This function plots the fundamental pitch of the input and the output vs. time. This function can be called at the end of dashboard.m by uncommenting a few lines of code. 
 
 # Results 
-# add images obviously
+
+![Thumbnail of Slate](image1.png)
 In order to evaluate the effectiveness of our algorithm, we analyzed our output signal using both graphical and auditory methods. Our first graphical assessment required the waterfall plots (Irvine, 2006) of the input and output FFTs. For those unfamiliar with the waterfall plot, it provides similar information compared to a spectogram.
 
 As you can see, our pitch correction clearly shifts the frequency spectra of the original signal, concentrating at two major frequencies.
 
-# add images obviously
+![Thumbnail of Slate](image2.png)
 
 However, we require more information about the frequencies present within the signal. This leads to our plot of the original signal with high frequency resolution (meaning a small delta f).
 
 However, we require more information about the frequencies present within the signal. This leads to our plot of the original signal with high frequency resolution (meaning a small delta f).
 
-# add images obviously
+![Thumbnail of Slate](image3.png)
 
 Based on our higher resolution, it is apparent that our original signal consists of a few frequency bands, most of which having a bandwidth between 5 and 10 Hz.
 
-# add images obviously
+![Thumbnail of Slate](image4.png)
 
 After correcting the signal, we can observe that the bandwidths have been altered drastically. The effective bandwidths for each band are smaller overall, and more emphasis is placed on the desired frequency (or musical note) from the frequency bins.
 
-# add images obviously
+![Thumbnail of Slate](image5.png)
 
 In addition, we plotted the pitch of the input signal (which is linearly increasing and decreasing over time) and compared it to the output signal pitch. It is evident that the algorithm generally shifts frequencies to their correct notes based on the frequency bin.
 
 Based on the graphs shown previously, our algorithm is shifting with relatively high precision and accuracy. However in practice, this difference isn’t the most effective to the listener. In fact our group discovered a bit of a paradox, where our data looked promising (A.K.A shifted correctly) but sounded a bit lackluster in comparison to the ineffective shifts with drastically different sound. Some of these issues may lie within our code; however much of these issues show that audio analysis can be subjective. 
 
-
-You can use the [editor on GitHub](https://github.com/johngear/DSP/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-
 ```markdown
-    %%Stereo file to be modified. Ex: 'dsp_SONG.wav'
+%%Stereo file to be modified. Ex: 'dsp_SONG.wav'
 input_file = 'drone.wav'; 
 
-    %%Size of the window in frames. Each frame has 1024 samples 
+%%Size of the window in frames. Each frame has 1024 samples 
 window_size = 10; 
 
-    %%Overlap percentage in decimal form (20% overlap = .2)
+%%Overlap percentage in decimal form (20% overlap = .2)
 overlap = .2;
 
-    %%fade length in number of samples per fade-in and fade-out
+%%fade length in number of samples per fade-in and fade-out
 fade_length = 128;
 
 %%Call processing function and saving the input and output
@@ -98,6 +93,12 @@ fade_length = 128;
 
 ------------------------------------
 everything below here will be deleted before submission
+
+
+
+You can use the [editor on GitHub](https://github.com/johngear/DSP/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 
 ### Markdown
