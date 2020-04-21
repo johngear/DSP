@@ -19,8 +19,6 @@ At a high level, our algorithm takes in an audio signal as the argument along wi
 
 RANDALL ADD SHIT HERE
 
-![Thumbnail of Slate](bins_image.png)
-
 
 ##  Functions:
 ### Now I will give a brief description of each Matlab file that we developed!
