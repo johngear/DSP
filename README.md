@@ -77,7 +77,7 @@ The sigFade function takes in the new audio signal and a fade length (chosen by 
 
 The plotFreq function takes in the input and output vectors along with a few other user defined parameters to graph our filter’s functionality. This function plots the fundamental pitch of the input and the output vs. time. This function can be called at the end of dashboard.m by uncommenting a few lines of code. 
 
-## Results: 
+## Results 
 
 ![Thumbnail of Slate](image1derek.png)
 In order to evaluate the effectiveness of our algorithm, we analyzed our output signal using both graphical and auditory methods. Our first graphical assessment required the waterfall plots (Irvine, 2006) of the input and output FFTs. For those unfamiliar with the waterfall plot, it provides similar information compared to a spectogram.
@@ -104,7 +104,7 @@ Based on the graphs shown previously, our algorithm is shifting with relatively 
 
 
 
-## References:
+## References
 Tom Irvine (2020). Waterfall FFT (https://www.mathworks.com/matlabcentral/fileexchange/7463-waterfall-fft), MATLAB Central File Exchange. Retrieved April 8, 2020.
 
 Nagel, Ashley. “Methods.” It's Just A Little Pitch Correction - DSP Final Project by A. Nagel, www.columbia.edu/~agn2114/methods.html.
