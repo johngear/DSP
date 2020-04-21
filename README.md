@@ -17,7 +17,7 @@ At a high level, our algorithm takes in an audio signal as the argument along wi
 
 ### Algorithm:
 
-RANDALL ADD SHIT HERE
+RANDALL ADD STUFF HERE
 
 
 ##  Functions:
@@ -73,8 +73,6 @@ In order to evaluate the effectiveness of our algorithm, we analyzed our output 
 As you can see, our pitch correction clearly shifts the frequency spectra of the original signal, concentrating at two major frequencies.
 
 ![Thumbnail of Slate](image2derek.png)
-
-However, we require more information about the frequencies present within the signal. This leads to our plot of the original signal with high frequency resolution (meaning a small delta f).
 
 However, we require more information about the frequencies present within the signal. This leads to our plot of the original signal with high frequency resolution (meaning a small delta f).
 
