@@ -1,8 +1,8 @@
 #  Pitch Correction (auto-tune) 
 # in MATLAB
-
-
-
+ 
+ 
+ 
 ## By DSP People 
 ### John Gearig, Derek LaFaive, Marlon Greene, Randall Schliebe
 ----------------------------------------------------------------
