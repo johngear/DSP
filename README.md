@@ -6,7 +6,7 @@
  ------------------
 
  
-## By DSP People 
+## By DSP People (group 14)
 ### John Gearig, Derek LaFaive, Marlon Greene, Randall Schliebe
 ----------------------------------------------------------------
 ## Introduction
