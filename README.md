@@ -1,4 +1,4 @@
-#  Pitch Correction (auto-tune) in MATLAB
+#  Pitch Correction (autotune) in MATLAB
 
 
 
