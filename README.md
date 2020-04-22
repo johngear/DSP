@@ -21,7 +21,7 @@ At its core, “pitch” is a perceptual quality of an audio signal; that is, it
 
 Our algorithm operates with discrete audio data sampled at some finite frequency. To shorten an input audio signal without altering pitch, our algorithm concatenates it by removing later data points. To lengthen a signal, it pulls data points from the “future,” that is, data points from a later time that it has received but not yet processed. To stretch a signal to its original length, our algorithm evenly spreads the remaining data points over the length of the original signal, and it fills gaps via linear interpolation. To shrink signals, our algorithm periodically removes data points.
 
-![](images/randall.png)
+![Thumbnail of Slate](Images/randall.png)
 
 ##  Functions
 ### Here is a brief description of each MATLAB file that we developed!
@@ -84,19 +84,19 @@ In order to evaluate the effectiveness of our algorithm, we analyzed our output 
 
 As you can see, our pitch correction clearly shifts the frequency spectra of the original signal, concentrating at two major frequencies.
 
-![Thumbnail of Slate](images/image2derek.png)
+![Thumbnail of Slate](Images/image2derek.png)
 
 However, we require more information about the frequencies present within the signal. This leads to our plot of the original signal with high frequency resolution (meaning a small delta f).
 
-![Thumbnail of Slate](images/image3derek.png)
+![Thumbnail of Slate](Images/image3derek.png)
 
 Based on our higher resolution, it is apparent that our original signal consists of a few frequency bands, most of which having a bandwidth between 5 and 10 Hz.
 
-![Thumbnail of Slate](images/image4derek.png)
+![Thumbnail of Slate](Images/image4derek.png)
 
 After correcting the signal, we can observe that the bandwidths have been altered drastically. The effective bandwidths for each band are smaller overall, and more emphasis is placed on the desired frequency (or musical note) from the frequency bins.
 
-![Thumbnail of Slate](images/image5derek.png)
+![Thumbnail of Slate](Images/image5derek.png)
 
 In addition, we plotted the pitch of the input signal (which is linearly increasing and decreasing over time) and compared it to the output signal pitch. It is evident that the algorithm generally shifts frequencies to their correct notes based on the frequency bin.
 
