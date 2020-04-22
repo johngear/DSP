@@ -21,7 +21,7 @@ At its core, “pitch” is a perceptual quality of an audio signal; that is, it
 
 Our algorithm operates with discrete audio data sampled at some finite frequency. To shorten an input audio signal without altering pitch, our algorithm concatenates it by removing later data points. To lengthen a signal, it pulls data points from the “future,” that is, data points from a later time that it has received but not yet processed. To stretch a signal to its original length, our algorithm evenly spreads the remaining data points over the length of the original signal, and it fills gaps via linear interpolation. To shrink signals, our algorithm periodically removes data points.
 
-![Thumbnail of Slate](images/randall.png)
+![](images/randall.png)
 
 ##  Functions
 ### Here is a brief description of each MATLAB file that we developed!
