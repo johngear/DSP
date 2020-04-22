@@ -81,6 +81,10 @@ The sigFade function takes in the new audio signal and a fade length (chosen by 
 
 The plotFreq function takes in the input and output vectors along with a few other user defined parameters to graph our filter’s functionality. This function plots the fundamental pitch of the input and the output vs. time. This function can be called at the end of dashboard.m by uncommenting a few lines of code. 
 
+### Bins_C_major.m
+
+This is an alternate tuning for the auto-tune, which corrects pitches to a C major scale instead of a chromatic scale. Changing the reference pitch (which is by default A) will change the key of the pitch correction. Making the reference pitch a B will make the key D (and so on). This simply changes the bins to omit certain frequencies. To run, load into matlab and run as a standalone function. When liveProcessing is run in matlab, ensure that the default bins do not overwrite the Bins_C_Major, by commenting or managing variables in the workspace. 
+
 ## Results 
 
 ![Thumbnail of Slate](Images/image1derek.png)
